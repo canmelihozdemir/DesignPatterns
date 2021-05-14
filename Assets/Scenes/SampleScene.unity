@@ -164,6 +164,73 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4683c5246c45434449d15b9f3df882e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &672615179
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 672615181}
+  - component: {fileID: 672615180}
+  - component: {fileID: 672615182}
+  m_Layer: 0
+  m_Name: ObjectPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &672615180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672615179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32517df10d4a5b242934f0b725c71d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pool:
+  - poolSize: 20
+    poolObject: {fileID: 3065563941362209511, guid: b9b1e0f456110964bb9eb4d2904e8a18,
+      type: 3}
+  - poolSize: 5
+    poolObject: {fileID: 132251124127127324, guid: a505fb8a4dcf61e4c96595ad7f6aa93d,
+      type: 3}
+  - poolSize: 3
+    poolObject: {fileID: 7238597435524918985, guid: 9c87e98533602634fb3c4046fba9f55c,
+      type: 3}
+--- !u!4 &672615181
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672615179}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &672615182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672615179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d41ea04d540cbe64fb70cbe7ad8a327c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spawnInterval: 1
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
