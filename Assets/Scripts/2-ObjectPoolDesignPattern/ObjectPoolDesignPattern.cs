@@ -14,9 +14,7 @@ namespace DesignPatterns.ObjectPool
             public Queue<GameObject> poolList;
         }
         [SerializeField] private Pool[] _pool=null;
-        //[SerializeField] private int _poolSize;
-        //[SerializeField] private GameObject _poolObject;
-        //private Queue<GameObject> _poolList;
+
 
         private void Awake()
         {
